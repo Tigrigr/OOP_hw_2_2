@@ -5,8 +5,8 @@ public class Slytherin extends Hogwarts{
     private int resourcefulness;
     private int lustForPower;
 
-    public Slytherin(String fullName, int age, int spellPower, int transgressionRange, int trick, int determination, int ambition, int resourcefulness, int lustForPower) {
-        super(fullName, age, spellPower, transgressionRange);
+    public Slytherin(String fullName, int age, String faculty, int spellPower, int transgressionRange, int trick, int determination, int ambition, int resourcefulness, int lustForPower) {
+        super(fullName, age, faculty, spellPower, transgressionRange);
         this.trick = trick;
         this.determination = determination;
         this.ambition = ambition;

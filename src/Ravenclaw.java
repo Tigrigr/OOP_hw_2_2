@@ -4,8 +4,8 @@ public class Ravenclaw extends Hogwarts{
     private int witty;
     private int creative;
 
-    public Ravenclaw(String fullName, int age, int spellPower, int transgressionRange, int intelligent, int wise, int witty, int creative) {
-        super(fullName, age, spellPower, transgressionRange);
+    public Ravenclaw(String fullName, int age, String faculty, int spellPower, int transgressionRange, int intelligent, int wise, int witty, int creative) {
+        super(fullName, age, faculty, spellPower, transgressionRange);
         this.intelligent = intelligent;
         this.wise = wise;
         this.witty = witty;

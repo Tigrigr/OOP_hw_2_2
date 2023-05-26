@@ -1,13 +1,15 @@
 public class Hogwarts {
     private String fullName;
     private int age;
+    private String faculty;
     private int spellPower;
     private int transgressionRange;
 
 
-    public Hogwarts(String fullName, int age, int spellPower, int transgressionRange) {
+    public Hogwarts(String fullName, int age, String faculty, int spellPower, int transgressionRange) {
         this.fullName = fullName;
         this.age = age;
+        this.faculty = faculty;
         this.spellPower = spellPower;
         this.transgressionRange = transgressionRange;
     }
@@ -26,6 +28,14 @@ public class Hogwarts {
 
     public void setAge(int age) {
         this.age = age;
+    }
+
+    public String getFaculty() {
+        return faculty;
+    }
+
+    public void setFaculty(String faculty) {
+        this.faculty = faculty;
     }
 
     public int getSpellPower() {
