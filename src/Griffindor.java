@@ -1,7 +1,7 @@
-public class Griffindor extends Hogwarts{
-    private int nobility;
-    private int honor;
-    private int honesty;
+public class Griffindor extends Hogwarts {
+    private int nobility; //Благородство
+    private int honor;  //Честь
+    private int honesty; //Храбрость
 
     public Griffindor(String fullName, int age, String faculty, int spellPower, int transgressionRange, int nobility, int honor, int honesty) {
         super(fullName, age, faculty, spellPower, transgressionRange);
@@ -32,5 +32,18 @@ public class Griffindor extends Hogwarts{
 
     public void setHonesty(int honesty) {
         this.honesty = honesty;
+    }
+
+    @Override
+    public String toString() {
+        return "Имя: " + getFullName() +
+                "; Возраст = " + getAge() +
+                "; Факультет = " + getFaculty() +
+                "; Сила магии = " + getSpellPower() +
+                "; Расстояние трансгрессии = " + getTransgressionRange() +
+                "; Благородство = " + nobility +
+                "; Честь = " + honor +
+                "; Храбрость = " + honesty
+                ;
     }
 }

@@ -1,8 +1,8 @@
-public class Ravenclaw extends Hogwarts{
-    private int intelligent;
-    private int wise;
-    private int witty;
-    private int creative;
+public class Ravenclaw extends Hogwarts {
+    private int intelligent; //Ум
+    private int wise; //Мудрость
+    private int witty; //Остроумность
+    private int creative; //Творчество
 
     public Ravenclaw(String fullName, int age, String faculty, int spellPower, int transgressionRange, int intelligent, int wise, int witty, int creative) {
         super(fullName, age, faculty, spellPower, transgressionRange);
@@ -42,5 +42,19 @@ public class Ravenclaw extends Hogwarts{
 
     public void setCreative(int creative) {
         this.creative = creative;
+    }
+
+    @Override
+    public String toString() {
+        return "Имя: " + getFullName() +
+                "; Возраст = " + getAge() +
+                "; Факультет = " + getFaculty() +
+                "; Сила магии = " + getSpellPower() +
+                "; Расстояние трансгрессии = " + getTransgressionRange() +
+                "; Ум = " + intelligent +
+                "; Мудрость = " + wise +
+                "; Остроумность = " + witty +
+                "; Творчество = " + creative
+                ;
     }
 }

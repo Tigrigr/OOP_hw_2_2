@@ -1,9 +1,9 @@
-public class Slytherin extends Hogwarts{
-    private int trick;
-    private int determination;
-    private int ambition;
-    private int resourcefulness;
-    private int lustForPower;
+public class Slytherin extends Hogwarts {
+    private int trick; //Хитрость
+    private int determination; //Решительность
+    private int ambition; //Амбициозность
+    private int resourcefulness; //Находчивость
+    private int lustForPower; //Жажда власти
 
     public Slytherin(String fullName, int age, String faculty, int spellPower, int transgressionRange, int trick, int determination, int ambition, int resourcefulness, int lustForPower) {
         super(fullName, age, faculty, spellPower, transgressionRange);
@@ -52,5 +52,20 @@ public class Slytherin extends Hogwarts{
 
     public void setLustForPower(int lustForPower) {
         this.lustForPower = lustForPower;
+    }
+
+    @Override
+    public String toString() {
+        return "Имя: " + getFullName() +
+                "; Возраст = " + getAge() +
+                "; Факультет = " + getFaculty() +
+                "; Сила магии = " + getSpellPower() +
+                "; Расстояние трансгрессии = " + getTransgressionRange() +
+                "; Хитрость = " + trick +
+                "; Решительность = " + determination +
+                "; Амбициозность = " + ambition +
+                "; Находчивость = " + resourcefulness +
+                "; Жажда власти = " + lustForPower
+                ;
     }
 }

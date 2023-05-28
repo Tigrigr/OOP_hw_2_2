@@ -53,4 +53,14 @@ public class Hogwarts {
     public void setTransgressionRange(int transgressionRange) {
         this.transgressionRange = transgressionRange;
     }
+
+    @Override
+    public String toString() {
+        return "Имя: " + fullName +
+                "; Возраст = " + age +
+                "; Факультет = " + faculty +
+                "; Сила магии = " + spellPower +
+                "; Расстояние трансгрессии = " + transgressionRange
+                ;
+    }
 }
